@@ -656,39 +656,39 @@ type Message struct {
 	LinkPreviewOptions            *LinkPreviewOptions            `json:"link_preview_options,omitempty"`
 	ForwardOrigin                 *MessageOrigin                 `json:"forward_origin,omitempty"`
 	BoostAdded                    *ChatBoostAdded                `json:"boost_added,omitempty"`
-	ChatBackgroundSet             *ChatBackground                `json:"chat_background_set,omitempty"`
-	SenderBusinessBot             *User                          `json:"sender_business_bot,omitempty"`
-	MediaGroupID                  string                         `json:"media_group_id,omitempty"`
-	ConnectedWebsite              string                         `json:"connected_website,omitempty"`
-	NewChatTitle                  string                         `json:"new_chat_title,omitempty"`
-	AuthorSignature               string                         `json:"author_signature,omitempty"`
-	Caption                       string                         `json:"caption,omitempty"`
-	Text                          string                         `json:"text,omitempty"`
-	BusinessConnectionID          string                         `json:"business_connection_id,omitempty"`
-	EffectID                      string                         `json:"effect_id,omitempty"`
-	CaptionEntities               []*MessageEntity               `json:"caption_entities,omitempty"`
-	NewChatPhoto                  []*PhotoSize                   `json:"new_chat_photo,omitempty"`
-	NewChatMembers                []*User                        `json:"new_chat_members,omitempty"`
-	Photo                         []*PhotoSize                   `json:"photo,omitempty"`
-	Entities                      []*MessageEntity               `json:"entities,omitempty"`
-	Chat                          Chat                           `json:"chat"`
-	ID                            int                            `json:"message_id"`
-	ThreadID                      int                            `json:"message_thread_id,omitempty"`
-	MigrateFromChatID             int                            `json:"migrate_from_chat_id,omitempty"`
-	Date                          int                            `json:"date"`
-	MigrateToChatID               int                            `json:"migrate_to_chat_id,omitempty"`
-	EditDate                      int                            `json:"edit_date,omitempty"`
-	SenderBoostCount              int                            `json:"sender_boost_count,omitempty"`
-	DeleteChatPhoto               bool                           `json:"delete_chat_photo,omitempty"`
-	IsTopicMessage                bool                           `json:"is_topic_message,omitempty"`
-	IsAutomaticForward            bool                           `json:"is_automatic_forward,omitempty"`
-	GroupChatCreated              bool                           `json:"group_chat_created,omitempty"`
-	SupergroupChatCreated         bool                           `json:"supergroup_chat_created,omitempty"`
-	ChannelChatCreated            bool                           `json:"channel_chat_created,omitempty"`
-	HasProtectedContent           bool                           `json:"has_protected_content,omitempty"`
-	HasMediaSpoiler               bool                           `json:"has_media_spoiler,omitempty"`
-	IsFromOffline                 bool                           `json:"is_from_offline,omitempty"`
-	ShowCaptionAboveMedia         bool                           `json:"show_caption_above_media,omitempty"`
+	// ChatBackgroundSet             *ChatBackground                `json:"chat_background_set,omitempty"`
+	SenderBusinessBot     *User            `json:"sender_business_bot,omitempty"`
+	MediaGroupID          string           `json:"media_group_id,omitempty"`
+	ConnectedWebsite      string           `json:"connected_website,omitempty"`
+	NewChatTitle          string           `json:"new_chat_title,omitempty"`
+	AuthorSignature       string           `json:"author_signature,omitempty"`
+	Caption               string           `json:"caption,omitempty"`
+	Text                  string           `json:"text,omitempty"`
+	BusinessConnectionID  string           `json:"business_connection_id,omitempty"`
+	EffectID              string           `json:"effect_id,omitempty"`
+	CaptionEntities       []*MessageEntity `json:"caption_entities,omitempty"`
+	NewChatPhoto          []*PhotoSize     `json:"new_chat_photo,omitempty"`
+	NewChatMembers        []*User          `json:"new_chat_members,omitempty"`
+	Photo                 []*PhotoSize     `json:"photo,omitempty"`
+	Entities              []*MessageEntity `json:"entities,omitempty"`
+	Chat                  Chat             `json:"chat"`
+	ID                    int              `json:"message_id"`
+	ThreadID              int              `json:"message_thread_id,omitempty"`
+	MigrateFromChatID     int              `json:"migrate_from_chat_id,omitempty"`
+	Date                  int              `json:"date"`
+	MigrateToChatID       int              `json:"migrate_to_chat_id,omitempty"`
+	EditDate              int              `json:"edit_date,omitempty"`
+	SenderBoostCount      int              `json:"sender_boost_count,omitempty"`
+	DeleteChatPhoto       bool             `json:"delete_chat_photo,omitempty"`
+	IsTopicMessage        bool             `json:"is_topic_message,omitempty"`
+	IsAutomaticForward    bool             `json:"is_automatic_forward,omitempty"`
+	GroupChatCreated      bool             `json:"group_chat_created,omitempty"`
+	SupergroupChatCreated bool             `json:"supergroup_chat_created,omitempty"`
+	ChannelChatCreated    bool             `json:"channel_chat_created,omitempty"`
+	HasProtectedContent   bool             `json:"has_protected_content,omitempty"`
+	HasMediaSpoiler       bool             `json:"has_media_spoiler,omitempty"`
+	IsFromOffline         bool             `json:"is_from_offline,omitempty"`
+	ShowCaptionAboveMedia bool             `json:"show_caption_above_media,omitempty"`
 }
 
 // MessageID represents a unique message identifier.

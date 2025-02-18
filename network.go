@@ -205,8 +205,10 @@ func (c lclient) get(base, endpoint string, vals url.Values, v APIResponse) erro
 		}
 	}
 
-	if err := c.wait(vals.Get("chat_id")); err != nil {
-		return err
+	if endpoint != "getChatMember" {
+		if err := c.wait(vals.Get("chat_id")); err != nil {
+			return err
+		}
 	}
 
 	cnt, err := c.doGet(url)
